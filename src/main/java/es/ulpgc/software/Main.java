@@ -6,7 +6,7 @@ import es.ulpgc.software.model.User;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         RandomUserProvider randomUserProvider = new RandomUserProvider();
         User user = randomUserProvider.provideNew();
         System.out.println(user);

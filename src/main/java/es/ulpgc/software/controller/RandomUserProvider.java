@@ -12,7 +12,7 @@ public class RandomUserProvider implements UserProvider {
     private final String RANDOM_USER_API = "https://randomuser.me/api";
 
     @Override
-    public User provideNew() throws IOException {
+    public User provideNew() {
         try {
             RandomUserAdapter randomUserAdapter = new RandomUserAdapter();
             String json = Jsoup.connect(RANDOM_USER_API).ignoreContentType(true).get().text();
